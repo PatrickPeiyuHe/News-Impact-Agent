@@ -1,0 +1,20 @@
+{
+  "doc_id": "cninfo_1225188803",
+  "ticker": "002796",
+  "company": "世嘉科技",
+  "title": "关于举行2025年度网上业绩说明会的公告",
+  "doc_type": "announcement",
+  "publish_date": "2026-04-27",
+  "url": "https://www.cninfo.com.cn/new/disclosure/detail?announcementId=1225188803",
+  "material_categories": [
+    "performance_event"
+  ],
+  "disclosure_dir": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188803",
+  "impact_report_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188803\\04_company_disclosure_impact\\output.txt",
+  "wiki_update_decision": "no_update",
+  "wiki_update_reason": "仅为年度业绩说明会召开安排，未提供可沉淀的新增经营/财务/治理事实",
+  "status": "completed",
+  "wiki_update_deferred": false,
+  "wiki_update_deferred_reason": "",
+  "wiki_update_applied": false
+}

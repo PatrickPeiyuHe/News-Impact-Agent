@@ -1,0 +1,7 @@
+{
+  "needs_compression": false,
+  "reason": "body_chars <= 2000",
+  "body_chars": 663,
+  "compressor_input_mode": "full_text",
+  "compressor_input_chars": 663
+}

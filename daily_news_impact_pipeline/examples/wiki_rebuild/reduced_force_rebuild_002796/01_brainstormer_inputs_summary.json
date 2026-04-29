@@ -1,0 +1,136 @@
+{
+  "output_dir": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs",
+  "model_config": {
+    "model": "qwen3.5-plus",
+    "provider": "dashscope",
+    "deployment_mode": "international",
+    "endpoint_region": "intl",
+    "enable_thinking": true,
+    "thinking_budget": 4096,
+    "explicit_cache": true,
+    "temperature": 0.1,
+    "top_p": 0.95,
+    "max_tokens": 8192
+  },
+  "tickers": {
+    "002104": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002104\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002104\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002104\\qwen_request_plan.json",
+      "char_count": 12243,
+      "diagnostics": {
+        "ticker": "002104",
+        "source_cutoff": "2026-04-26",
+        "announcement_candidate_count": 1,
+        "research_report_candidate_count": 0,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "002104_cninfo_1225191480",
+          "latest_periodic_like": "002104_cninfo_1225191488",
+          "origin_document": "002104_cninfo_19742038"
+        }
+      }
+    },
+    "002296": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002296\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002296\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002296\\qwen_request_plan.json",
+      "char_count": 11495,
+      "diagnostics": {
+        "ticker": "002296",
+        "source_cutoff": "2026-04-27",
+        "announcement_candidate_count": 1,
+        "research_report_candidate_count": 0,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "002296_cninfo_1225208945",
+          "latest_periodic_like": "002296_cninfo_1225208952",
+          "origin_document": "002296_cninfo_57048667"
+        }
+      }
+    },
+    "002491": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002491\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002491\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002491\\qwen_request_plan.json",
+      "char_count": 13780,
+      "diagnostics": {
+        "ticker": "002491",
+        "source_cutoff": "2026-04-27",
+        "announcement_candidate_count": 8,
+        "research_report_candidate_count": 0,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "002491_cninfo_1225217016",
+          "latest_periodic_like": "002491_cninfo_1224958164",
+          "origin_document": "002491_cninfo_58494460"
+        }
+      }
+    },
+    "002792": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002792\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002792\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002792\\qwen_request_plan.json",
+      "char_count": 13250,
+      "diagnostics": {
+        "ticker": "002792",
+        "source_cutoff": "2026-04-27",
+        "announcement_candidate_count": 4,
+        "research_report_candidate_count": 1,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "002792_cninfo_1225219275",
+          "latest_periodic_like": "002792_cninfo_1225219284",
+          "origin_document": "002792_cninfo_1202048809"
+        }
+      }
+    },
+    "002796": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002796\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002796\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\002796\\qwen_request_plan.json",
+      "char_count": 13271,
+      "diagnostics": {
+        "ticker": "002796",
+        "source_cutoff": "2026-04-26",
+        "announcement_candidate_count": 6,
+        "research_report_candidate_count": 0,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "002796_cninfo_1225188780",
+          "latest_periodic_like": "002796_cninfo_1225188788",
+          "origin_document": "002796_cninfo_1202237114"
+        }
+      }
+    },
+    "300134": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\300134\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\300134\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\300134\\qwen_request_plan.json",
+      "char_count": 13144,
+      "diagnostics": {
+        "ticker": "300134",
+        "source_cutoff": "2026-04-26",
+        "announcement_candidate_count": 4,
+        "research_report_candidate_count": 0,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "300134_cninfo_1225198389",
+          "latest_periodic_like": "300134_cninfo_1225183283",
+          "origin_document": "300134_cninfo_58499304"
+        }
+      }
+    },
+    "600410": {
+      "input_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\600410\\brainstormer_input.md",
+      "payload_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\600410\\brainstormer_payload.json",
+      "request_plan_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\01_brainstormer_inputs\\600410\\qwen_request_plan.json",
+      "char_count": 12714,
+      "diagnostics": {
+        "ticker": "600410",
+        "source_cutoff": "2026-04-27",
+        "announcement_candidate_count": 3,
+        "research_report_candidate_count": 1,
+        "fixed_source_doc_ids": {
+          "primary_annual_report": "600410_cninfo_1225206838",
+          "latest_periodic_like": "600410_cninfo_1225206826",
+          "origin_document": "600410_cninfo_13880038"
+        }
+      }
+    }
+  }
+}

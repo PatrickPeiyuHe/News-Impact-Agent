@@ -1,0 +1,5 @@
+{
+  "needs_compression": true,
+  "reason": "body_chars > 2000",
+  "body_chars": 2107
+}

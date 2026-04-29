@@ -1,0 +1,13 @@
+{
+  "doc_id": "policy_3ebc676722d9851b",
+  "title": "中共中央办公厅 国务院办公厅关于加强新就业群体服务管理的意见",
+  "publish_date": "2026-04-26",
+  "issuer": "中国政府网",
+  "url": "https://www.gov.cn/zhengce/202604/content_7066998.htm",
+  "policy_dir": "reports\\policy_news_impact_runs\\policy_news_impact_20260425_20260428_r1\\policy_3ebc676722d9851b",
+  "status": "skipped",
+  "skip_category": "no_initial_match",
+  "skip_reason": "Initial Match Node found no company in the 41-stock wiki pool with a concrete policy-to-company path.",
+  "initial_matches": [],
+  "impact_report_path": ""
+}

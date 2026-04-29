@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "date_from": "2026-04-25",
+  "date_to": "2026-04-28",
+  "action_count": 118,
+  "paths": {
+    "daily_all_company_actions_csv": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\daily_all_company_actions.csv",
+    "daily_all_company_actions_md": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\daily_all_company_actions.md",
+    "daily_company_coverage_csv": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\daily_company_coverage.csv",
+    "daily_company_coverage_md": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\daily_company_coverage.md",
+    "daily_all_impacts_md": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\daily_all_impacts.md",
+    "by_date_dir": "reports\\daily_news_impact_runs\\daily_news_impact_20260425_20260428_existing_report_smoke_r2\\07_daily_outputs\\outputs\\by_date"
+  },
+  "wiki_snapshots": []
+}

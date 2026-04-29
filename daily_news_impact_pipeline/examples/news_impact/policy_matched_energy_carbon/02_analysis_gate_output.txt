@@ -1,0 +1,6 @@
+{
+  "decision": "analyze",
+  "reason": "Detailed official interpretation of a national policy on energy saving and carbon reduction with concrete measures and industry focus.",
+  "skip_category": "none",
+  "usable_information": "Official interpretation of the 'Opinions on Higher-Level and Higher-Quality Energy Saving and Carbon Reduction Work' issued by the General Offices of the CPC Central Committee and the State Council. Covers key sectors: industry (steel, nonferrous metals, petrochemicals, chemicals, building materials), construction, transportation, and digital infrastructure. Specifies measures: strict project access through carbon emission displacement, energy efficiency retrofits, promotion of low-carbon technologies, and energy structure optimization (controlling fossil fuels, expanding non-fossil energy and new power systems). Highlights that industrial energy consumption accounts for 2/3 of total, with over 10% of capacity below baseline efficiency, indicating large retrofit potential. Also emphasizes the role of energy saving in achieving carbon peak and energy security."
+}

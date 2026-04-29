@@ -1,0 +1,13 @@
+[project]
+name = "daily-news-impact-pipeline"
+version = "0.1.0"
+description = "A staged daily news impact pipeline for policy news, company disclosures, wiki updates, and impact reporting."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

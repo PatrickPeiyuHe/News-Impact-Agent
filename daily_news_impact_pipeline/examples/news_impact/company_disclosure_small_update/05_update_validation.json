@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "checks": {
+    "has_ticker": true,
+    "has_company": true,
+    "not_code_fenced": true,
+    "length_ratio_ok": true,
+    "heading_overlap_ok": true
+  },
+  "original_chars": 4368,
+  "updated_chars": 5091,
+  "length_ratio": 1.1655,
+  "original_heading_count": 9,
+  "updated_heading_count": 9,
+  "heading_overlap": 1.0
+}

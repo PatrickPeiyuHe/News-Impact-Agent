@@ -1,0 +1,230 @@
+{
+  "applied_at": "2026-04-28T19:04:38",
+  "writer_output_root": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs",
+  "collection_dir": "reports\\company_markdown_wiki_final_collection_20260427",
+  "manifest_path": "reports\\company_markdown_wiki_final_collection_20260427\\manifest.csv",
+  "model": "kimi-k2.6",
+  "tickers": [
+    "002104",
+    "002296",
+    "002491",
+    "002792",
+    "002796",
+    "300134",
+    "600410"
+  ],
+  "dry_run": false,
+  "applied": [
+    {
+      "ticker": "002104",
+      "company": "恒宝股份",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\002104\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\002104__reduced_wiki.md",
+      "previous_file": "002104__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\002104\\20260428_190429__before_rebuild__002104__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 3536,
+        "first_line": "# 恒宝股份 (002104) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "002296",
+      "company": "辉煌科技",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\002296\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\002296__reduced_wiki.md",
+      "previous_file": "002296__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\002296\\20260428_190429__before_rebuild__002296__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 4929,
+        "first_line": "# 辉煌科技 (002296) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "002491",
+      "company": "通鼎互联",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\002491\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\002491__reduced_wiki.md",
+      "previous_file": "002491__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\002491\\20260428_190429__before_rebuild__002491__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 3686,
+        "first_line": "# 通鼎互联 (002491) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "002792",
+      "company": "通宇通讯",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\002792\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\002792__reduced_wiki.md",
+      "previous_file": "002792__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\002792\\20260428_190429__before_rebuild__002792__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 4217,
+        "first_line": "# 通宇通讯 (002792) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "002796",
+      "company": "世嘉科技",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\002796\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\002796__reduced_wiki.md",
+      "previous_file": "002796__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\002796\\20260428_190429__before_rebuild__002796__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 3409,
+        "first_line": "# 世嘉科技 (002796) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "300134",
+      "company": "大富科技",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\300134\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\300134__reduced_wiki.md",
+      "previous_file": "300134__reduced_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\300134\\20260428_190429__before_rebuild__300134__reduced_wiki.md"
+      ],
+      "removed_files": [],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 4090,
+        "first_line": "# 大富科技 (300134) Company Wiki"
+      },
+      "dry_run": false
+    },
+    {
+      "ticker": "600410",
+      "company": "华胜天成",
+      "writer_output": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\force_rebuild_reduced_wiki\\05_writer_outputs\\600410\\kimi-k2.6\\output.md",
+      "target_path": "reports\\company_markdown_wiki_final_collection_20260427\\600410__reduced_wiki.md",
+      "previous_file": "600410__full_wiki.md",
+      "archive_paths": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\600410\\20260428_190429__before_rebuild__600410__full_wiki.md"
+      ],
+      "removed_files": [
+        "reports\\company_markdown_wiki_final_collection_20260427\\600410__full_wiki.md"
+      ],
+      "validation": {
+        "accepted": true,
+        "checks": {
+          "not_empty": true,
+          "starts_with_heading": true,
+          "has_ticker": true,
+          "has_company": true,
+          "length_ok": true,
+          "not_code_fenced": true
+        },
+        "chars": 4647,
+        "first_line": "# 华胜天成 (600410) Company Wiki"
+      },
+      "dry_run": false
+    }
+  ],
+  "index_rebuild": {
+    "build_time_utc": "2026-04-28T23:04:38.946994+00:00",
+    "input_manifest": "reports\\company_markdown_wiki_final_collection_20260427\\manifest.csv",
+    "input_manifest_sha256": "2fb9c53b3ec7278d281566330535e5df492a74b8780e65545bc354811514099f",
+    "collection_dir": "reports\\company_markdown_wiki_final_collection_20260427",
+    "company_count": 41,
+    "manifest_company_count": 41,
+    "chunk_count": 374,
+    "failures": [],
+    "chunking": {
+      "identity_hard_max": 1800,
+      "section_hard_max": 3200,
+      "table_hard_max": 2800,
+      "short_chunk_min": 120,
+      "split_overlap_chars": 120,
+      "preserve_complete_subheadings_paragraphs_tables": true
+    },
+    "embedding": {
+      "status": "ok",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "device": "cuda",
+      "path": "data\\news_impact\\wiki_index\\wiki_chunk_embeddings.npy",
+      "shape": [
+        374,
+        384
+      ]
+    },
+    "audit": {
+      "csv": "data\\news_impact\\wiki_index\\wiki_index_audit.csv",
+      "markdown": "data\\news_impact\\wiki_index\\wiki_index_audit.md",
+      "issue_count": 0,
+      "failure_count": 0
+    }
+  }
+}

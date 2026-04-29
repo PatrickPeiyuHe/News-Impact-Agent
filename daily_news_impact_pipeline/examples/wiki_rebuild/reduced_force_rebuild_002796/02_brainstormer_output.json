@@ -1,0 +1,221 @@
+{
+  "company_terms": {
+    "products_services": [
+      "精密箱体系统",
+      "定制化精密箱体",
+      "电梯轿厢系统",
+      "新能源设备箱体",
+      "半导体设备箱体",
+      "医疗设备箱体",
+      "安检设备箱体",
+      "通信设备箱体"
+    ],
+    "technologies_processes": [
+      "精密数控加工",
+      "表面处理",
+      "检验检测",
+      "定制化设计",
+      "组装配送",
+      "电磁防干扰"
+    ],
+    "customers_counterparties": [],
+    "suppliers_inputs": [],
+    "projects_assets_capacity": [],
+    "entities_subsidiaries": [],
+    "industry_variables": [
+      "电梯制造",
+      "新能源及节能设备",
+      "半导体设备",
+      "医疗设备",
+      "安检设备",
+      "通信设备",
+      "蜂窝格局",
+      "细分市场"
+    ],
+    "stage_status_terms": [
+      "定制化",
+      "全流程业务体系",
+      "规模化生产",
+      "品牌化效应"
+    ],
+    "risk_terms": [
+      "下游需求细分",
+      "技术要求差异",
+      "恶劣户外环境",
+      "潜在进入者"
+    ]
+  },
+  "selected_announcements": [
+    {
+      "doc_id": "002796_cninfo_1224958076",
+      "role": "operating_update",
+      "priority": 1,
+      "reason": "2025年度业绩预告 provides operating performance changes and earnings triggers",
+      "sessions": [
+        "freshness_recent_events",
+        "financial_segments_quality"
+      ],
+      "extra_terms": [
+        "业绩变动",
+        "同比",
+        "增长",
+        "下降"
+      ]
+    },
+    {
+      "doc_id": "002796_cninfo_1224961661",
+      "role": "project_capacity",
+      "priority": 2,
+      "reason": "对外投资进展 may reveal capacity expansion or new business segments",
+      "sessions": [
+        "products_assets_projects",
+        "capital_obligations"
+      ],
+      "extra_terms": [
+        "投资进展",
+        "项目"
+      ]
+    },
+    {
+      "doc_id": "002796_cninfo_1225188794",
+      "role": "financing_obligation",
+      "priority": 2,
+      "reason": "综合授信额度及担保 reveals financing capacity and guarantee obligations",
+      "sessions": [
+        "capital_obligations"
+      ],
+      "extra_terms": [
+        "授信额度",
+        "担保",
+        "金融机构"
+      ]
+    },
+    {
+      "doc_id": "002796_cninfo_1224929639",
+      "role": "financing_obligation",
+      "priority": 3,
+      "reason": "为子公司提供担保进展 shows subsidiary guarantee exposure",
+      "sessions": [
+        "capital_obligations",
+        "customers_suppliers_counterparties"
+      ],
+      "extra_terms": [
+        "子公司担保",
+        "进展"
+      ]
+    }
+  ],
+  "selected_research_reports": [],
+  "session_overrides": {
+    "business_model": {
+      "extra_keywords": [
+        "精密箱体系统",
+        "定制化设计",
+        "电梯轿厢",
+        "专用设备",
+        "全流程业务体系"
+      ],
+      "extra_semantic_queries": [
+        "精密箱体系统业务模式和应用领域",
+        "定制化设计生产服务流程",
+        "下游行业细分市场分布"
+      ]
+    },
+    "products_assets_projects": {
+      "extra_keywords": [
+        "精密数控加工",
+        "表面处理",
+        "新能源设备箱体",
+        "半导体设备箱体",
+        "产能",
+        "对外投资"
+      ],
+      "extra_semantic_queries": [
+        "精密箱体产品类型和生产能力",
+        "对外投资项目和产能扩张",
+        "核心技术和工艺设备"
+      ]
+    },
+    "customers_suppliers_counterparties": {
+      "extra_keywords": [
+        "电梯制造商",
+        "新能源设备客户",
+        "半导体设备客户",
+        "前五大客户",
+        "子公司"
+      ],
+      "extra_semantic_queries": [
+        "主要客户和行业分布",
+        "客户集中度和依赖风险",
+        "子公司和参股公司情况"
+      ]
+    },
+    "financial_segments_quality": {
+      "extra_keywords": [
+        "分产品收入",
+        "分行业收入",
+        "毛利率",
+        "业绩预告",
+        "经营现金流"
+      ],
+      "extra_semantic_queries": [
+        "各应用领域收入构成和毛利率",
+        "业绩变动原因和趋势",
+        "应收账款和存货质量"
+      ]
+    },
+    "capital_obligations": {
+      "extra_keywords": [
+        "综合授信",
+        "担保事项",
+        "对外投资",
+        "借款",
+        "金融机构"
+      ],
+      "extra_semantic_queries": [
+        "授信额度和使用情况",
+        "担保对象和金额",
+        "投资项目进展和资金用途"
+      ]
+    },
+    "industry_competition_triggers": {
+      "extra_keywords": [
+        "蜂窝格局",
+        "细分市场",
+        "竞争格局",
+        "技术要求",
+        "电磁防干扰",
+        "户外环境"
+      ],
+      "extra_semantic_queries": [
+        "精密箱体行业竞争格局和壁垒",
+        "下游行业需求变化趋势",
+        "技术要求和认证标准"
+      ]
+    },
+    "freshness_recent_events": {
+      "extra_keywords": [
+        "业绩预告",
+        "投资进展",
+        "担保进展",
+        "同比",
+        "环比"
+      ],
+      "extra_semantic_queries": [
+        "2025年业绩变动原因",
+        "近期对外投资进展",
+        "经营数据和订单变化"
+      ]
+    }
+  },
+  "negative_terms": [
+    "审计机构",
+    "质量控制复核人",
+    "现金管理",
+    "分红",
+    "股东大会",
+    "董事会",
+    "监事会",
+    "日常经营"
+  ]
+}

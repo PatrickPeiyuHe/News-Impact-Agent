@@ -1,0 +1,7 @@
+{
+  "needs_compression": true,
+  "reason": "body_chars > 2000",
+  "body_chars": 107786,
+  "compressor_input_mode": "keyword_window_extract",
+  "compressor_input_chars": 29706
+}

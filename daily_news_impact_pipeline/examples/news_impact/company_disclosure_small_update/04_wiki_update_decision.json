@@ -1,0 +1,12 @@
+{
+  "impact_direction": "mixed",
+  "certainty": "medium",
+  "impact_nature": "mixed",
+  "wiki_update_decision": "small_update",
+  "wiki_update_reason": "2026Q1出现利润扭亏与经营现金流显著恶化并存，属于可用于后续跟踪的阶段性财务拐点与风险信号，适合在财务与风险跟踪段落做小幅锚定更新。",
+  "durable_new_information": [
+    "2026Q1营收3.60亿元(+8.72%)，归母净利2,289万元（同比扭亏），扣非净利1,877万元",
+    "2026Q1经营现金流-2.53亿元，货币资金较期末-61%",
+    "应收账款与存货显著上升并带动信用减值损失上升，体现营运资金压力"
+  ]
+}

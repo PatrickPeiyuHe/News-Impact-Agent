@@ -1,0 +1,69 @@
+{
+  "doc_id": "policy_ceff6f0c4038446c",
+  "title": "国家发展改革委有关负责同志和相关专家解读——更高水平更高质量做好节能降碳工作",
+  "publish_date": "2026-04-26",
+  "issuer": "中国政府网",
+  "url": "https://www.gov.cn/zhengce/202604/content_7066989.htm",
+  "policy_dir": "reports\\policy_news_impact_runs\\policy_news_impact_20260425_20260428_r1\\policy_ceff6f0c4038446c",
+  "initial_matches": [
+    {
+      "ticker": "300308",
+      "company": "中际旭创",
+      "reason": "政策要求加强算力基础设施源头把关，公司高速光模块直接用于数据中心和AI算力基础设施，需求高度绑定。",
+      "evidence_ids": [
+        "E002",
+        "E105",
+        "E107"
+      ]
+    },
+    {
+      "ticker": "300394",
+      "company": "天孚通信",
+      "reason": "政策要求加强算力基础设施源头把关，公司光引擎和光互连方案直接用于AI数据中心和算力基础设施，业绩与相关资本开支周期绑定。",
+      "evidence_ids": [
+        "E001",
+        "E101",
+        "E104"
+      ]
+    },
+    {
+      "ticker": "688668",
+      "company": "鼎通科技",
+      "reason": "政策要求加强算力基础设施源头把关，公司高速通讯连接器组件和液冷散热器直接用于AI服务器和数据中心，需求与算力基础设施投资高度相关。",
+      "evidence_ids": [
+        "E003",
+        "E111",
+        "E113"
+      ]
+    },
+    {
+      "ticker": "300548",
+      "company": "长芯博创",
+      "reason": "政策要求加强算力基础设施源头把关，公司综合光电互联方案（光模块、AOC等）直接服务AI算力基础设施，收入结构中数通占比高。",
+      "evidence_ids": [
+        "E004",
+        "E117",
+        "E118"
+      ]
+    },
+    {
+      "ticker": "002296",
+      "company": "辉煌科技",
+      "reason": "政策明确发展新型储能和智能微电网，公司正在推进全钒液流电池储能和园区智能微电网系统，业务与政策直接对应。",
+      "evidence_ids": [
+        "E006",
+        "E122"
+      ]
+    },
+    {
+      "ticker": "600674",
+      "company": "川投能源",
+      "reason": "政策要求科学布局抽水蓄能，公司控股湖北远安抽水蓄能项目，正在建设中，直接受益于抽水蓄能发展政策。",
+      "evidence_ids": [
+        "E019"
+      ]
+    }
+  ],
+  "impact_report_path": "reports\\policy_news_impact_runs\\policy_news_impact_20260425_20260428_r1\\policy_ceff6f0c4038446c\\10_company_impact_analysis\\impact_report.md",
+  "status": "completed"
+}

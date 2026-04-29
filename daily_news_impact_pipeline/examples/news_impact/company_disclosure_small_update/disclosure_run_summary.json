@@ -1,0 +1,22 @@
+{
+  "doc_id": "cninfo_1225188070",
+  "ticker": "300504",
+  "company": "天邑股份",
+  "title": "2026年一季度报告",
+  "doc_type": "announcement",
+  "publish_date": "2026-04-27",
+  "url": "https://www.cninfo.com.cn/new/disclosure/detail?announcementId=1225188070",
+  "material_categories": [
+    "quarterly_report"
+  ],
+  "disclosure_dir": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188070",
+  "impact_report_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188070\\04_company_disclosure_impact\\output.txt",
+  "wiki_update_decision": "small_update",
+  "wiki_update_reason": "2026Q1出现利润扭亏与经营现金流显著恶化并存，属于可用于后续跟踪的阶段性财务拐点与风险信号，适合在财务与风险跟踪段落做小幅锚定更新。",
+  "status": "completed",
+  "wiki_update_deferred": false,
+  "wiki_update_deferred_reason": "",
+  "wiki_update_applied": true,
+  "updated_wiki_path": "reports\\company_markdown_wiki_final_collection_20260427\\300504__reduced_wiki.md",
+  "archived_wiki_path": "reports\\company_markdown_wiki_final_collection_20260427\\_archive\\300504\\20260428_180011__300504__reduced_wiki.md"
+}

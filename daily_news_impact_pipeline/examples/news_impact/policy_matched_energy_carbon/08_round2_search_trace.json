@@ -1,0 +1,218 @@
+[
+  {
+    "company_id": "300394",
+    "direct_terms": [
+      "算力基础设施",
+      "光引擎",
+      "数据中心"
+    ],
+    "semantic_terms": [
+      "算力基础设施源头把关对公司光器件需求的影响",
+      "AI数据中心能效管理是否影响公司订单"
+    ],
+    "downweight_terms": [
+      "消费电子",
+      "5G基站"
+    ],
+    "allowed_tickers": [
+      "300394"
+    ],
+    "candidate_chunks": 8,
+    "scored_chunks": 4,
+    "returned": 4,
+    "per_company_counts": {
+      "300394": 4
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "300308",
+    "direct_terms": [
+      "光模块",
+      "数据中心",
+      "算力基础设施"
+    ],
+    "semantic_terms": [
+      "算力基础设施能效要求是否影响光模块迭代需求",
+      "政策是否推动数据中心能效标准提升"
+    ],
+    "downweight_terms": [
+      "泛AI",
+      "概念"
+    ],
+    "allowed_tickers": [
+      "300308"
+    ],
+    "candidate_chunks": 10,
+    "scored_chunks": 6,
+    "returned": 6,
+    "per_company_counts": {
+      "300308": 6
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "688668",
+    "direct_terms": [
+      "连接器",
+      "算力基础设施",
+      "液冷"
+    ],
+    "semantic_terms": [
+      "算力基础设施源头把关对高速互连组件的影响",
+      "液冷化趋势是否受节能降碳政策加强"
+    ],
+    "downweight_terms": [
+      "消费电子",
+      "汽车"
+    ],
+    "allowed_tickers": [
+      "688668"
+    ],
+    "candidate_chunks": 15,
+    "scored_chunks": 13,
+    "returned": 6,
+    "per_company_counts": {
+      "688668": 6
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "300548",
+    "direct_terms": [
+      "光模块",
+      "AOC",
+      "算力基础设施"
+    ],
+    "semantic_terms": [
+      "综合光电互联方案在算力基础设施能效优化中的作用",
+      "政策是否抑制或刺激数据中心光互联需求"
+    ],
+    "downweight_terms": [
+      "消费电子",
+      "HDMI"
+    ],
+    "allowed_tickers": [
+      "300548"
+    ],
+    "candidate_chunks": 9,
+    "scored_chunks": 5,
+    "returned": 5,
+    "per_company_counts": {
+      "300548": 5
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "002296",
+    "direct_terms": [
+      "储能",
+      "智能微电网",
+      "全钒液流电池"
+    ],
+    "semantic_terms": [
+      "新型储能与智能微电网政策是否加速公司储能业务落地",
+      "工业节能改造是否拉动公司监测系统需求"
+    ],
+    "downweight_terms": [
+      "铁路信号",
+      "传统业务"
+    ],
+    "allowed_tickers": [
+      "002296"
+    ],
+    "candidate_chunks": 9,
+    "scored_chunks": 3,
+    "returned": 3,
+    "per_company_counts": {
+      "002296": 3
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "002902",
+    "direct_terms": [
+      "磁性元器件",
+      "储能",
+      "光伏"
+    ],
+    "semantic_terms": [
+      "节能降碳政策是否推动光伏储能逆变器需求",
+      "能效标准提升对磁性元器件技术升级的影响"
+    ],
+    "downweight_terms": [
+      "通信元器件",
+      "5G"
+    ],
+    "allowed_tickers": [
+      "002902"
+    ],
+    "candidate_chunks": 9,
+    "scored_chunks": 6,
+    "returned": 6,
+    "per_company_counts": {
+      "002902": 6
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "300183",
+    "direct_terms": [
+      "储能",
+      "微电网",
+      "能量管理"
+    ],
+    "semantic_terms": [
+      "公司储能业务是否受益于新型电力系统建设",
+      "工业节能政策是否带动能源管理芯片需求"
+    ],
+    "downweight_terms": [
+      "载波通信",
+      "智能家居"
+    ],
+    "allowed_tickers": [
+      "300183"
+    ],
+    "candidate_chunks": 10,
+    "scored_chunks": 5,
+    "returned": 5,
+    "per_company_counts": {
+      "300183": 5
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  },
+  {
+    "company_id": "600674",
+    "direct_terms": [
+      "抽水蓄能",
+      "水电",
+      "清洁能源"
+    ],
+    "semantic_terms": [
+      "抽水蓄能布局与新型电力系统政策契合度",
+      "清洁能源消纳政策是否提升公司水电资产价值"
+    ],
+    "downweight_terms": [
+      "火电",
+      "煤炭"
+    ],
+    "allowed_tickers": [
+      "600674"
+    ],
+    "candidate_chunks": 13,
+    "scored_chunks": 10,
+    "returned": 6,
+    "per_company_counts": {
+      "600674": 6
+    },
+    "semantic_backend": "local_phrase_char_overlap",
+    "embedding_file_present": true
+  }
+]

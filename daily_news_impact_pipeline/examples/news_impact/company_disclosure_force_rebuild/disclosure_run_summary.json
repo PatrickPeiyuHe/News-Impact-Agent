@@ -1,0 +1,20 @@
+{
+  "doc_id": "cninfo_1225188780",
+  "ticker": "002796",
+  "company": "世嘉科技",
+  "title": "2025年年度报告",
+  "doc_type": "annual_report",
+  "publish_date": "2026-04-27",
+  "url": "https://www.cninfo.com.cn/new/disclosure/detail?announcementId=1225188780",
+  "material_categories": [
+    "annual_report"
+  ],
+  "disclosure_dir": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188780",
+  "impact_report_path": "reports\\company_disclosure_impact_runs\\company_disclosure_impact_20260425_20260428_full_apply_r2\\cninfo_1225188780\\04_company_disclosure_impact\\output.txt",
+  "wiki_update_decision": "force_rebuild",
+  "wiki_update_reason": "2025年年度报告属于需重建的基础披露，且核心财务与负债结构较既有wiki发生显著变化",
+  "status": "completed",
+  "wiki_update_deferred": false,
+  "wiki_update_deferred_reason": "",
+  "wiki_update_applied": false
+}

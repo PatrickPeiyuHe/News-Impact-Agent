@@ -1,0 +1,25 @@
+{
+  "usage": {
+    "prompt_tokens": 13760,
+    "completion_tokens": 8074,
+    "total_tokens": 21834
+  },
+  "cost_estimate": {
+    "currency": "CNY",
+    "estimated_amount": 0.307438,
+    "prompt_tokens": 13760,
+    "completion_tokens": 8074,
+    "input_cache_hit_tokens": 0,
+    "input_cache_miss_tokens": 13760,
+    "price_per_1m": {
+      "input_cache_hit": 1.1,
+      "input_cache_miss": 6.5,
+      "output": 27.0
+    },
+    "raw_usage": {
+      "prompt_tokens": 13760,
+      "completion_tokens": 8074,
+      "total_tokens": 21834
+    }
+  }
+}
