@@ -1,5 +1,11 @@
 # Daily News Impact One-Click Pipeline
 
+## Project Definition
+
+News Impact Agent is an agentic financial research pipeline that turns newly ingested policy news, company disclosures, financial reports, and broker research into stock-level impact analysis and continuously maintained company wikis.
+
+Given a date range and a covered stock universe, the system collects and parses new information, identifies which companies are plausibly affected, analyzes the impact against durable company knowledge, and updates the company wiki only when the new source changes the investable understanding of the business.
+
 ## 目标
 
 这个目录封装一个日度总控 pipeline。给定中国自然日日期范围，它完成：

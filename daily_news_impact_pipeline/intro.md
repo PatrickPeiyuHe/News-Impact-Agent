@@ -46,14 +46,15 @@ This architecture is intentionally staged. Each step leaves intermediate artifac
 
 ## LLM Company Wiki Memory
 
-The company wiki layer is a key design feature. Each company has a compact, evidence-bound wiki that acts as long-term memory for downstream agents. It captures what the company sells, where it sits in the value chain, which products, customers, suppliers, technologies, projects, and aliases future news may mention, and which facts are fresh, stale, uncertain, or disclosure-limited.
+The LLM wiki layer is one of the most important design choices in this project. The motivation came from a practical limitation: general-purpose models often have incomplete or stale knowledge about specific A-share companies, especially smaller listed companies, recent disclosures, supply-chain relationships, aliases, projects, and segment-level operating variables.
 
-The wiki system has two build modes:
+Naive RAG over raw company documents can retrieve useful fragments. Those fragments alone often fail to form a stable company model. For investment reasoning, the agent needs to understand what the company actually does, where it sits in the value chain, which events matter, which metrics drive earnings or risk, which claims are primary-source facts, and which details remain uncertain. Running deep research for every company on every news item would be too expensive in tokens, latency, and human review effort.
 
-- **Reduced wiki builder:** the default daily route. It creates a compact 2,000-4,000 Chinese-character company wiki from selected primary filings, recent disclosures, and secondary research context. It is fast enough for daily rebuilds and dense enough for RAG search.
-- **Full wiki builder:** a heavier research-loop route for initial company onboarding or manual deep review. It builds a longer evidence-backed company profile with business model, economics, recent changes, risks, and valuation relevance.
+The company wiki solves this by turning repeated research into durable memory. Each wiki is a compact, evidence-bound company object that stores the business model, products, assets, customers, suppliers, technologies, projects, aliases, value-chain position, recent changes, risk points, and information freshness. Downstream impact agents can retrieve this memory before judging policy news or company disclosures.
 
-This wiki layer makes the agent more reliable than a one-shot news summarizer. Policy news can be matched against company-specific assets, products, and value-chain exposure. Company disclosures can update durable memory. Future impact analysis then starts from a richer and more current understanding of the company.
+The full wiki path is also a small agent project inside the project. I built a file research agent that selects local filings and reports, plans retrieval objectives, reads evidence, builds an evidence bank, writes a company wiki, and runs a critic/revision loop before publishing. The loop is close to a ReAct-style workflow: plan, retrieve, read, write, critique, revise, and archive. The daily pipeline then uses a lighter wiki maintenance path for incremental updates and major-source refreshes.
+
+From an agent-engineering perspective, this is the main technical point: the system treats memory as a first-class product surface. It separates raw documents, retrieved evidence, durable company understanding, event-level reasoning, and final user outputs. That separation improves reliability, lowers repeated research cost, and makes the agent easier to inspect.
 
 ## Output Surface
 
@@ -84,11 +85,12 @@ The current version is already useful as a research and review assistant. The ne
 
 This project shows my ability to build an AI-native research agent around a real investment workflow:
 
-- **LLM workflow design:** multi-stage gating, retrieval planning, compression, initial matching, final impact reasoning, wiki updates, and report generation.
-- **RAG engineering:** company-level memory objects, hybrid retrieval, evidence packaging, source selection, index refresh, and artifact traceability.
+- **Agent workflow design:** multi-stage gating, retrieval planning, compression, initial matching, final impact reasoning, memory updates, critic-style review, and report generation.
+- **RAG and memory engineering:** company-level long-term memory, hybrid retrieval, evidence packaging, source selection, index refresh, and artifact traceability.
+- **File research agent design:** local document selection, iterative evidence reading, evidence-bank construction, long-form wiki writing, critique, revision, and publishing.
 - **Financial reasoning:** translating policy and disclosure text into company-level impact direction, certainty, horizon, mechanism, and risk.
 - **System engineering:** one-click daily execution, preflight checks, resumable stages, structured outputs, examples, and open-source presentation assets.
-- **Product judgment:** designing an agent that complements a quant model and improves the human review loop before capital allocation.
+- **Product judgment:** balancing model capability, token cost, latency, inspectability, and human review effort in a real investment workflow.
 
 Together with SignalForge, this project shows a broader direction: quantitative models identify candidate opportunities, while LLM agents maintain real-world company context and explain recent event risk.
 
@@ -140,14 +142,13 @@ Daily News Impact Agent 是一套面向 A 股研究的日度事件理解系统�
 
 ## LLM Company Wiki Memory
 
-LLM wiki 是这个项目的一个小但关键的亮点。每家公司都有一个紧凑、基于证据的公司 wiki，作为下游 Agent 的长期记忆。它记录公司实际销售什么、处在产业链哪里、未来新闻可能提到哪些产品、客户、供应商、技术、项目和别名，以及哪些事实是最新的、过时的、不确定的或披露有限的。
+LLM wiki 是这个项目里的一个关键亮点。我的设计出发点很实际：通用模型对 A 股中小公司、最新披露、产业链细节、别名关系和项目进展的掌握经常滞后；普通 RAG 每次从公司数据库里搜索片段，容易拿到局部事实，也经常缺少对公司本质、产业链位置和影响变量的稳定理解；每次针对每家公司做 deep research，token、延迟和人工 review 成本都很高。
 
-Wiki 系统有两种构建模式：
+因此，LLM wiki 承担公司级长期记忆的角色。每家公司都有一个紧凑、基于证据的公司对象，记录商业模式、核心产品、资产项目、客户供应商、关键技术、别名、产业链位置、近期变化、风险点和信息新鲜度。后续 policy impact agent 或 disclosure impact agent 在判断事件影响前，会先读取这个公司记忆。
 
-- **Reduced wiki builder：** 日度 pipeline 默认路径。它从核心公告、最新财报、重要披露和二级研报上下文中生成 2,000-4,000 中文字符左右的紧凑 wiki，足够快，可以日常重建，也足够密集，可以支持 RAG 检索。
-- **Full wiki builder：** 更重的研究循环路径，用于公司首次 onboarding 或人工深度 review。它生成更长的证据型公司画像，覆盖商业模式、经营变量、近期变化、风险和估值相关性。
+Full wiki 路径本身也是一个小型 Agent 项目。我手搓了一个 file research agent：它会选择本地公告、财报和研报文件，规划检索目标，读取证据，构建 evidence bank，生成公司 wiki，再通过 critic/revision loop 做质量检查后发布。这个循环接近 ReAct 风格：plan、retrieve、read、write、critique、revise、archive。日度 pipeline 则使用更轻的维护路径处理增量更新和重大信息源刷新。
 
-这个 wiki 层让系统具备持续学习能力。政策新闻可以和公司特定资产、产品、产业链位置进行匹配；公司公告可以更新长期记忆；后续 impact analysis 会基于更完整、更新的公司理解继续推理。
+从 Agent Engineer 的角度看，这里的技术亮点是把 memory 当成一等系统对象来设计。系统区分 raw documents、retrieved evidence、durable company understanding、event-level reasoning 和 final user outputs。这样的分层降低重复研究成本，提高影响判断稳定性，也让每次输出更容易审查。
 
 ## 输出形态
 
@@ -178,10 +179,11 @@ Daily News Impact Agent 可以放在 SignalForge 旁边，形成更完整的投�
 
 这个项目展示了我围绕真实投资工作流构建 AI-native research agent 的能力：
 
-- **LLM workflow design：** 多阶段门控、检索规划、文本压缩、初始匹配、最终影响推理、wiki 更新和报告生成。
-- **RAG engineering：** 公司级记忆对象、hybrid retrieval、证据打包、source selection、index refresh 和 artifact traceability。
+- **Agent workflow design：** 多阶段门控、检索规划、文本压缩、初始匹配、最终影响推理、长期记忆更新、critic-style review 和报告生成。
+- **RAG and memory engineering：** 公司级长期记忆、hybrid retrieval、证据打包、source selection、index refresh 和 artifact traceability。
+- **File research agent design：** 本地文档选择、迭代式证据阅读、evidence bank 构建、长文 wiki 写作、critique、revision 和 publishing。
 - **金融推理：** 把政策和披露文本转化为公司级影响方向、置信度、周期、机制和风险。
 - **系统工程：** 一键日度运行、preflight checks、可恢复 stages、结构化输出、样例集和开源展示材料。
-- **产品判断：** 构建一个能补充量化模型、提升人工 review 质量、服务资金决策前流程的 Agent。
+- **产品判断：** 在真实投资工作流里平衡模型能力、token 成本、延迟、可审查性和人工 review 负担。
 
 和 SignalForge 放在一起看，这个项目展示了一个更完整的方向：量化模型发现候选机会，LLM Agent 维护真实世界公司上下文，并解释近期事件风险。

@@ -108,6 +108,10 @@ Full builder architecture:
 
 ![Full wiki builder detail](open_source_assets/full_wiki_builder_detail.png)
 
+Research loop subagent runtime:
+
+![Full wiki research loop detail](open_source_assets/full_wiki_research_loop_detail.png)
+
 Default research tracks:
 
 | Track | Mission |

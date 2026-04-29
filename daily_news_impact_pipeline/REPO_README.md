@@ -1,6 +1,12 @@
 # News Impact Agent
 
-This repository presents a production-style design for a daily financial news impact agent. It focuses on Chinese A-share policy news, company disclosures, research reports, company wiki maintenance, and daily impact reporting.
+News Impact Agent is an agentic financial research pipeline that turns newly ingested policy news, company disclosures, financial reports, and broker research into stock-level impact analysis and continuously maintained company wikis.
+
+The project is designed around a simple definition:
+
+> Given a date range and a covered stock universe, collect and parse new information, identify which companies are plausibly affected, analyze the impact against durable company knowledge, and update the company wiki only when the new source changes the investable understanding of the business.
+
+The implementation focuses on Chinese A-share workflows, but the architecture is general: source ingestion, document indexing, hybrid RAG matching, per-company impact reasoning, wiki patch/rebuild decisions, and daily coverage outputs.
 
 The core project lives in:
 
