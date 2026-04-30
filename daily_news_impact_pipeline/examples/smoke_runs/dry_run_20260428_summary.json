@@ -1,0 +1,42 @@
+{
+  "command": "python daily_news_impact_pipeline\\run_daily_news_impact_one_click.py --date-from 2026-04-28 --date-to 2026-04-28 --run-id open_source_smoke_dryrun_20260428 --dry-run --skip-wiki-snapshot --continue-on-error",
+  "observed_at_utc": "2026-04-30T01:06:18Z",
+  "status": "completed",
+  "run_id": "open_source_smoke_dryrun_20260428",
+  "date_from": "2026-04-28",
+  "date_to": "2026-04-28",
+  "dry_run": true,
+  "preflight": {
+    "policy_docs_in_range": 12,
+    "company_documents_in_range": 7,
+    "wiki_database_company_count": 93,
+    "final_wiki_markdown_count": 41,
+    "news_impact_index_manifest_exists": true
+  },
+  "policy_impact": {
+    "status": "dry_run_completed",
+    "policy_count": 12
+  },
+  "company_disclosure_impact": {
+    "status": "dry_run_completed",
+    "selected_disclosure_count": 38
+  },
+  "force_rebuild_wiki": {
+    "status": "skipped",
+    "reason": "no_force_rebuild_tickers"
+  },
+  "final_wiki_index": {
+    "status": "completed",
+    "dry_run": true
+  },
+  "daily_outputs": {
+    "status": "completed",
+    "action_count": 0,
+    "paths": [
+      "reports/daily_news_impact_runs/open_source_smoke_dryrun_20260428/07_daily_outputs/outputs/daily_all_company_actions.csv",
+      "reports/daily_news_impact_runs/open_source_smoke_dryrun_20260428/07_daily_outputs/outputs/daily_company_coverage.csv",
+      "reports/daily_news_impact_runs/open_source_smoke_dryrun_20260428/07_daily_outputs/outputs/daily_all_impacts.md",
+      "reports/daily_news_impact_runs/open_source_smoke_dryrun_20260428/07_daily_outputs/outputs/by_date"
+    ]
+  }
+}

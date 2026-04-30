@@ -490,20 +490,40 @@ Representative artifacts:
 
 Full wiki build is the heavier onboarding route. It is slower and more expensive than reduced rebuild, and it is designed for deep company understanding.
 
-Core prompt roles:
+The full builder uses a graph-controlled research process with tool-using planner subagents. It is described in detail in [`FULL_WIKI_BUILD_AGENT.md`](FULL_WIKI_BUILD_AGENT.md).
 
-| Node | Prompt Role |
-|---|---|
-| Anchor and brief | produce stable company scope, key vocabulary, obvious gaps |
-| Research router | allocate fixed research tracks and adapt them to the company |
-| Planner loops | use local search tools, commit evidence, update research notes |
-| Draft writer | synthesize business mechanism from evidence |
-| Critic | find unsupported inference, stale facts, missing mechanisms, and weak downstream usefulness |
-| Valuation stage | use valuation as business-quality and sensitivity lens without price anchoring |
-| Final writer | audit all prior artifacts and ship one durable wiki |
+Core prompt contracts:
+
+| Node | Prompt Role | Output |
+|---|---|---|
+| Anchor memo | Read the anchor source bundle and create a stable first business memo with scope, terms, segments, gaps, and factual boundaries | Long memo |
+| Company brief | Compress the anchor memo into a repeated-read briefing for other agents | Short memo |
+| Research goals | Turn the initial read into a company-specific research agenda | Goal list |
+| Research router | Allocate 1-4 subagents with owned missions, source preferences, and done criteria | JSON |
+| Wiki planner | Run one ReAct-style tool turn: local search, expand context, optional web search, commit evidence, update notes, or finish | Tool calls |
+| Round draft writer | Synthesize first-pass business understanding from anchor and committed evidence | `draft_1` markdown |
+| Critic | Find unsupported inference, stale facts, missing mechanisms, weak retrieval handles, and downstream usefulness gaps | Prioritized critique |
+| Valuation selector | Choose three method roles from the valuation method library without price anchoring | Method memo |
+| Valuation planner | Gather method-specific assumptions and missing inputs | Tool calls |
+| Assumption reasoner | Produce calculator-ready assumptions with source limits and scenarios | Method memo |
+| JSONizer | Convert assumptions into strict method JSON | JSON only |
+| Valuation synthesis writer | Explain business quality, sensitivity, and fragility from calculator outputs | Valuation memo |
+| Final wiki writer | Audit all prior artifacts and write one durable LLM company wiki | Final markdown wiki |
+
+Representative prompt requirements:
+
+```text
+Use local corpus search before web search.
+Commit only source-backed facts to the evidence bank.
+Preserve aliases, products, projects, customers, suppliers, financial drivers, risks, and retrieval trigger terms.
+Mark stale, incomplete, broker-only, or unsupported facts.
+Use valuation as business-quality and sensitivity context.
+Do not use current stock price, target price, market-cap-derived upside, or price momentum.
+```
 
 Detailed architecture:
 
+- [`FULL_WIKI_BUILD_AGENT.md`](FULL_WIKI_BUILD_AGENT.md)
 - [`WIKI_BUILD_AGENT.md`](WIKI_BUILD_AGENT.md)
 - [`open_source_assets/full_wiki_builder_detail.png`](open_source_assets/full_wiki_builder_detail.png)
 - [`open_source_assets/full_wiki_research_loop_detail.png`](open_source_assets/full_wiki_research_loop_detail.png)

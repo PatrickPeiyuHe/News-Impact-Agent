@@ -1,6 +1,6 @@
 # Wiki Build Agent Design
 
-This document explains the Company Wiki builder used by the daily news impact system. It is written as an engineering design note for review and open-source presentation. The production default is the reduced builder. The full builder is also represented because it explains the heavier research-loop route used for deep company onboarding.
+This document explains the Company Wiki builder used by the daily news impact system. It is written as an engineering design note for review and open-source presentation. The production default is the reduced builder. The full builder is documented as a high-budget extension for deep company onboarding and higher-quality review.
 
 ## Why The Wiki Exists
 
@@ -89,7 +89,11 @@ The reduced builder plan is represented in [`reduced.py`](daily_news_impact/wiki
 
 ### Full Wiki Builder
 
-Full is the heavy research-loop route.
+Full is the high-budget research-loop route. The daily pipeline defaults to reduced rebuilds; full builds are used when a company needs first-time onboarding, manual deep review, or a richer long-form wiki.
+
+The full builder is described in detail in [`FULL_WIKI_BUILD_AGENT.md`](FULL_WIKI_BUILD_AGENT.md), including prompt contracts for anchor memo, research router, planner loops, critic, valuation nodes, and final writer.
+
+Architecturally, the full builder is similar to a LangGraph/ReAct hybrid: a deterministic DAG controls stage order and artifact contracts, while planner subagents run tool-using research turns inside bounded loops.
 
 Use it when:
 

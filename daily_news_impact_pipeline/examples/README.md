@@ -4,7 +4,7 @@ This directory contains curated outputs from real pipeline runs. The goal is to 
 
 The examples are intentionally selective. They keep representative outputs and key intermediate artifacts, while excluding raw API responses and request payloads.
 
-For suggested reading paths, see [`../REVIEW_GUIDE.md`](../REVIEW_GUIDE.md). For public prompt contracts, see [`../PROMPTS.md`](../PROMPTS.md).
+For suggested reading paths, see [`../REVIEW_GUIDE.md`](../REVIEW_GUIDE.md). For public prompt contracts, see [`../PROMPTS.md`](../PROMPTS.md). For the optional deep-research wiki route, see [`../FULL_WIKI_BUILD_AGENT.md`](../FULL_WIKI_BUILD_AGENT.md).
 
 ## Directory Map
 
@@ -21,6 +21,10 @@ examples/
     company_disclosure_no_update/
   wiki_rebuild/
     reduced_force_rebuild_002796/
+  smoke_runs/
+    dry_run_20260428_summary.json
+    standalone_repo_dry_run_summary.json
+    wiki_build_plan_modes.json
   daily_outputs/
     daily_all_company_actions.csv
     daily_company_coverage.csv
@@ -36,6 +40,8 @@ examples/
 | `wikis/reduced/002796__reduced_wiki.md` | reduced wiki | Rebuilt daily-pipeline wiki after annual-report force rebuild |
 | `wikis/reduced/300504__reduced_wiki.md` | reduced wiki | Reduced wiki after a sequence of small patches |
 | `wikis/reduced/300308__reduced_wiki.md` | reduced wiki | Compact wiki for a high-relevance optical module company |
+
+The full wiki samples are outputs of the high-budget build route described in [`../FULL_WIKI_BUILD_AGENT.md`](../FULL_WIKI_BUILD_AGENT.md): anchor memo, planner research loops, evidence bank, critic, valuation stage, and final writer. The reduced samples are the default daily-pipeline wiki form.
 
 ## Policy News Impact Examples
 
@@ -143,3 +149,13 @@ Key files:
 | `2026-04-27/company_coverage.csv` | one-day 41-company coverage table |
 
 The daily tables are the main product surface. A user can open them to see which companies had impact analysis, which had wiki updates, and which had no action.
+
+## Smoke Run Examples
+
+`smoke_runs/` contains small artifacts that show the CLI can execute in offline review mode:
+
+| File | Meaning |
+|---|---|
+| `dry_run_20260428_summary.json` | Completed one-click dry run with source plan, preflight counts, branch summaries, and daily output paths |
+| `standalone_repo_dry_run_summary.json` | Completed dry run in a standalone open-source clone without production databases |
+| `wiki_build_plan_modes.json` | Output from the offline wiki build plan inspector showing reduced and full modes |

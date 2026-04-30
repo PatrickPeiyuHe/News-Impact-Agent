@@ -1,0 +1,39 @@
+{
+  "command": "python daily_news_impact_pipeline\\run_daily_news_impact_one_click.py --date-from 2026-04-28 --date-to 2026-04-28 --run-id publish_smoke_dryrun_20260428 --dry-run --skip-wiki-snapshot --continue-on-error --no-resume",
+  "observed_at_utc": "2026-04-30T01:12:27Z",
+  "status": "completed",
+  "scope": "standalone open-source clone without production databases",
+  "run_id": "publish_smoke_dryrun_20260428",
+  "date_from": "2026-04-28",
+  "date_to": "2026-04-28",
+  "dry_run": true,
+  "preflight": {
+    "policy_db_exists": false,
+    "document_db_exists": false,
+    "wiki_db_exists": false,
+    "final_wiki_markdown_count": 0
+  },
+  "source_update": {
+    "status": "completed",
+    "dry_run": true,
+    "planned_categories": [
+      "cninfo",
+      "eastmoney",
+      "index",
+      "ingest",
+      "policy"
+    ]
+  },
+  "policy_impact": {
+    "status": "dry_run_completed",
+    "policy_count": 0
+  },
+  "company_disclosure_impact": {
+    "status": "dry_run_completed",
+    "selected_disclosure_count": 0
+  },
+  "daily_outputs": {
+    "status": "completed",
+    "action_count": 0
+  }
+}
