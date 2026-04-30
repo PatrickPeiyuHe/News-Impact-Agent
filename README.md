@@ -39,6 +39,8 @@ The detailed branch diagrams are in the project README:
 ## Main Documents
 
 - [Daily Pipeline README](daily_news_impact_pipeline/README.md)
+- [Reviewer Guide](daily_news_impact_pipeline/REVIEW_GUIDE.md)
+- [Prompt Contracts](daily_news_impact_pipeline/PROMPTS.md)
 - [Wiki Build Agent Design](daily_news_impact_pipeline/WIKI_BUILD_AGENT.md)
 - [Curated Examples](daily_news_impact_pipeline/examples/README.md)
 
@@ -72,6 +74,12 @@ The `examples/` directory includes:
 - daily action and coverage tables
 
 These examples are curated from real pipeline runs and keep the important execution artifacts while excluding raw API requests and raw provider responses.
+
+## How To Review
+
+Start with the [Reviewer Guide](daily_news_impact_pipeline/REVIEW_GUIDE.md). It gives 5-minute, 15-minute, 30-minute, and 60-minute reading paths.
+
+For LLM behavior, read [Prompt Contracts](daily_news_impact_pipeline/PROMPTS.md). It summarizes node roles, compact output schemas, and conservative wiki-update rules without exposing raw provider payloads.
 
 ## Status
 

@@ -4,6 +4,8 @@ This directory contains curated outputs from real pipeline runs. The goal is to 
 
 The examples are intentionally selective. They keep representative outputs and key intermediate artifacts, while excluding raw API responses and request payloads.
 
+For suggested reading paths, see [`../REVIEW_GUIDE.md`](../REVIEW_GUIDE.md). For public prompt contracts, see [`../PROMPTS.md`](../PROMPTS.md).
+
 ## Directory Map
 
 ```text

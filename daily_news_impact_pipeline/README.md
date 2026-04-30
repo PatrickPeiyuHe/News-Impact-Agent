@@ -37,6 +37,8 @@ daily_news_impact_pipeline/
   run_daily_news_impact_one_click.py
   show_wiki_build_plan.py     # 离线展示 reduced/full wiki builder plan
   README.md
+  REVIEW_GUIDE.md            # 外部 reviewer 阅读路线
+  PROMPTS.md                 # 公开 prompt contract 和节点角色
   WIKI_BUILD_AGENT.md
   examples/                  # curated wiki and news-impact outputs for project review
   daily_news_impact/
@@ -61,6 +63,13 @@ Wiki build agent 的详细设计见：
 
 ```text
 daily_news_impact_pipeline/WIKI_BUILD_AGENT.md
+```
+
+外部 reviewer 阅读路线和 prompt contract 见：
+
+```text
+daily_news_impact_pipeline/REVIEW_GUIDE.md
+daily_news_impact_pipeline/PROMPTS.md
 ```
 
 代表性样例见：
@@ -356,6 +365,14 @@ run_summary.json
 
 ```text
 daily_news_impact_pipeline/examples/README.md
+```
+
+快速 review 入口：
+
+```text
+daily_news_impact_pipeline/REVIEW_GUIDE.md
+daily_news_impact_pipeline/PROMPTS.md
+daily_news_impact_pipeline/WIKI_BUILD_AGENT.md
 ```
 
 ## Resume

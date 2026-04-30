@@ -2,7 +2,7 @@
 
 ## English Version
 
-Daily News Impact Agent is a daily event-understanding system for A-share research. It monitors policy news, company disclosures, financial reports, prospectuses, and stock research reports, maps them to a focused company universe, analyzes their likely impact, updates a durable company knowledge layer, and produces daily action tables for downstream investment review.
+Daily News Impact Agent is a daily event-understanding system for A-share research. It monitors policy news, company disclosures, financial reports, prospectuses, and stock research reports, maps them to a focused company universe, analyzes their likely impact, updates an LLM company wiki layer, and produces daily action tables for downstream investment review.
 
 I built this project in about one month as a companion system to SignalForge. SignalForge monitors price, volume, microstructure, market regime, and execution risk. Daily News Impact Agent adds a real-world context layer: what happened recently, which listed companies may be affected, how strong the impact is, and whether the company memory needs to be updated before future analysis.
 
@@ -50,7 +50,7 @@ The LLM wiki layer is one of the most important design choices in this project. 
 
 Naive RAG over raw company documents can retrieve useful fragments. Those fragments alone often fail to form a stable company model. For investment reasoning, the agent needs to understand what the company actually does, where it sits in the value chain, which events matter, which metrics drive earnings or risk, which claims are primary-source facts, and which details remain uncertain. Running deep research for every company on every news item would be too expensive in tokens, latency, and human review effort.
 
-The company wiki solves this by turning repeated research into durable memory. Each wiki is a compact, evidence-bound company object that stores the business model, products, assets, customers, suppliers, technologies, projects, aliases, value-chain position, recent changes, risk points, and information freshness. Downstream impact agents can retrieve this memory before judging policy news or company disclosures.
+The LLM company wiki solves this by turning repeated research into a durable, evidence-bound company knowledge object. Each wiki stores the business model, products, assets, customers, suppliers, technologies, projects, aliases, value-chain position, recent changes, risk points, and information freshness. Downstream impact agents retrieve this wiki before judging policy news or company disclosures.
 
 The full wiki path is also a small agent project inside the project. I built a file research agent that selects local filings and reports, plans retrieval objectives, reads evidence, builds an evidence bank, writes a company wiki, and runs a critic/revision loop before publishing. The loop is close to a ReAct-style workflow: plan, retrieve, read, write, critique, revise, and archive. The daily pipeline then uses a lighter wiki maintenance path for incremental updates and major-source refreshes.
 
@@ -86,7 +86,7 @@ The current version is already useful as a research and review assistant. The ne
 This project shows my ability to build an AI-native research agent around a real investment workflow:
 
 - **Agent workflow design:** multi-stage gating, retrieval planning, compression, initial matching, final impact reasoning, memory updates, critic-style review, and report generation.
-- **RAG and memory engineering:** company-level long-term memory, hybrid retrieval, evidence packaging, source selection, index refresh, and artifact traceability.
+- **RAG and company wiki engineering:** LLM company wikis, hybrid retrieval, evidence packaging, source selection, index refresh, and artifact traceability.
 - **File research agent design:** local document selection, iterative evidence reading, evidence-bank construction, long-form wiki writing, critique, revision, and publishing.
 - **Financial reasoning:** translating policy and disclosure text into company-level impact direction, certainty, horizon, mechanism, and risk.
 - **System engineering:** one-click daily execution, preflight checks, resumable stages, structured outputs, examples, and open-source presentation assets.
@@ -98,9 +98,9 @@ Together with SignalForge, this project shows a broader direction: quantitative 
 
 ## 中文版本
 
-Daily News Impact Agent 是一套面向 A 股研究的日度事件理解系统。它每天监测政策新闻、公司公告、财报、招股书和个股研报，将事件映射到重点公司池，分析潜在影响，更新长期公司知识层，并生成可供投资复盘和下游系统使用的日度 action table。
+Daily News Impact Agent 是一套面向 A 股研究的日度事件理解系统。它每天监测政策新闻、公司公告、财报、招股书和个股研报，将事件映射到重点公司池，分析潜在影响，更新 LLM company wiki 层，并生成可供投资复盘和下游系统使用的日度 action table。
 
-我用大约一个月时间搭建了这个项目，把它作为 SignalForge 的配套系统。SignalForge 负责监测价格、成交量、盘中微观结构、市场环境和执行风险；Daily News Impact Agent 补充真实世界上下文：最近发生了什么、哪些上市公司可能受影响、影响强度如何、是否需要更新公司记忆，再让后续分析站在新的事实基础上继续推理。
+我用大约一个月时间搭建了这个项目，把它作为 SignalForge 的配套系统。SignalForge 负责监测价格、成交量、盘中微观结构、市场环境和执行风险；Daily News Impact Agent 补充真实世界上下文：最近发生了什么、哪些上市公司可能受影响、影响强度如何、是否需要更新 LLM company wiki，再让后续分析站在新的事实基础上继续推理。
 
 ## 项目动机
 
@@ -144,7 +144,7 @@ Daily News Impact Agent 是一套面向 A 股研究的日度事件理解系统�
 
 LLM wiki 是这个项目里的一个关键亮点。我的设计出发点很实际：通用模型对 A 股中小公司、最新披露、产业链细节、别名关系和项目进展的掌握经常滞后；普通 RAG 每次从公司数据库里搜索片段，容易拿到局部事实，也经常缺少对公司本质、产业链位置和影响变量的稳定理解；每次针对每家公司做 deep research，token、延迟和人工 review 成本都很高。
 
-因此，LLM wiki 承担公司级长期记忆的角色。每家公司都有一个紧凑、基于证据的公司对象，记录商业模式、核心产品、资产项目、客户供应商、关键技术、别名、产业链位置、近期变化、风险点和信息新鲜度。后续 policy impact agent 或 disclosure impact agent 在判断事件影响前，会先读取这个公司记忆。
+因此，LLM company wiki 承担公司级知识对象的角色。每家公司都有一个紧凑、基于证据的 wiki，记录商业模式、核心产品、资产项目、客户供应商、关键技术、别名、产业链位置、近期变化、风险点和信息新鲜度。后续 policy impact agent 或 disclosure impact agent 在判断事件影响前，会先读取这个 wiki。
 
 Full wiki 路径本身也是一个小型 Agent 项目。我手搓了一个 file research agent：它会选择本地公告、财报和研报文件，规划检索目标，读取证据，构建 evidence bank，生成公司 wiki，再通过 critic/revision loop 做质量检查后发布。这个循环接近 ReAct 风格：plan、retrieve、read、write、critique、revise、archive。日度 pipeline 则使用更轻的维护路径处理增量更新和重大信息源刷新。
 
@@ -159,7 +159,7 @@ Full wiki 路径本身也是一个小型 Agent 项目。我手搓了一个 file 
 - 按日期拆分的 `company_actions.csv`：当天事件影响表。
 - 按日期拆分的 `company_coverage.csv`：当天完整 coverage 表。
 - impact reports：解释方向、置信度、机制、影响周期和风险的 Markdown 报告。
-- wiki archive 和 snapshot records：记录公司记忆层的每一次变化。
+- wiki archive 和 snapshot records：记录 LLM company wiki 的每一次变化。
 
 代表性字段包括 date、ticker、company、source type、title、action type、impact direction、certainty、impact nature、wiki action、impact report path、wiki path、source URL 和 notes。
 
@@ -171,7 +171,7 @@ Daily News Impact Agent 可以放在 SignalForge 旁边，形成更完整的投�
 - 在执行前标记负面公告、滞后风险或政策敏感暴露；
 - 解释某个技术信号可能增强、减弱或变得拥挤的事件原因；
 - 生成 event tags，未来可以转化为模型特征或 selector 约束；
-- 为通信设备、AI 基础设施、光模块、数据中心供应链等重点方向维护公司记忆层。
+- 为通信设备、AI 基础设施、光模块、数据中心供应链等重点方向维护 LLM company wiki。
 
 当前版本已经可以作为研究和 review assistant 使用。下一步可以把 impact direction、certainty、catalyst type 和 wiki freshness 结构化后接入量化 pipeline。
 
@@ -179,8 +179,8 @@ Daily News Impact Agent 可以放在 SignalForge 旁边，形成更完整的投�
 
 这个项目展示了我围绕真实投资工作流构建 AI-native research agent 的能力：
 
-- **Agent workflow design：** 多阶段门控、检索规划、文本压缩、初始匹配、最终影响推理、长期记忆更新、critic-style review 和报告生成。
-- **RAG and memory engineering：** 公司级长期记忆、hybrid retrieval、证据打包、source selection、index refresh 和 artifact traceability。
+- **Agent workflow design：** 多阶段门控、检索规划、文本压缩、初始匹配、最终影响推理、LLM company wiki 更新、critic-style review 和报告生成。
+- **RAG and company wiki engineering：** 公司级 LLM wiki、hybrid retrieval、证据打包、source selection、index refresh 和 artifact traceability。
 - **File research agent design：** 本地文档选择、迭代式证据阅读、evidence bank 构建、长文 wiki 写作、critique、revision 和 publishing。
 - **金融推理：** 把政策和披露文本转化为公司级影响方向、置信度、周期、机制和风险。
 - **系统工程：** 一键日度运行、preflight checks、可恢复 stages、结构化输出、样例集和开源展示材料。

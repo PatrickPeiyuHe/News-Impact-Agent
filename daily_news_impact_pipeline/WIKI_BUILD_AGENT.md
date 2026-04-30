@@ -4,7 +4,7 @@ This document explains the Company Wiki builder used by the daily news impact sy
 
 ## Why The Wiki Exists
 
-The news impact agent needs a durable company knowledge object. A useful wiki must let another agent answer:
+The news impact agent needs an LLM company wiki: a durable company knowledge object designed for retrieval and reasoning. A useful wiki must let another agent answer:
 
 - What the company actually sells, owns, operates, or controls.
 - Where the company sits in the value chain.
@@ -12,7 +12,7 @@ The news impact agent needs a durable company knowledge object. A useful wiki mu
 - Which operating variables change earnings, balance-sheet pressure, valuation sensitivity, or event risk.
 - Which facts are fresh, stale, uncertain, broker-only, or explicitly undisclosed.
 
-The wiki is therefore a retrieval and reasoning asset. It is not a marketing profile.
+The LLM company wiki is therefore a retrieval and reasoning asset. It is not a marketing profile.
 
 ## Two Build Modes
 
